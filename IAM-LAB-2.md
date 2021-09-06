@@ -151,7 +151,7 @@ Instead of creating and distributing your AWS credentials,  you can use IAM role
 
 10. Run the following commands: 
 
-  * `aws ec2 describe-instances --region us-west-2`
+  * `aws ec2 describe-instances --region eu-west-1` (change the region if neccessary)
   * `aws s3 mb s3://aw-academy-labs-test-bucket-randomnumber`
 
   * Notice that while you can list EC2 instances now due to the permissions set for John, you no longer have the ability to create S3 buckets because the instance profile has been overridden. To check which identity is making API calls use the `aws sts get-caller-identity` command.
